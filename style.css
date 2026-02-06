@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    background: linear-gradient(
+        -45deg,
+        #1b0235,
+        #8a1d48,
+        #2c094b,
+        #8a2254
+    );
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color : cornsilk;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    } */
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+h1{
+    /* position:relative; */
+    text-align: center;
+    font-size: 50px;
+}
+
+#content{
+    margin : auto;
+    padding : 15px;
+    height: 400px;
+    width : 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+input{
+    margin: 7px auto;
+    padding: 10px;
+    height: 15px;
+    width : 250px;
+}
+#submit{
+    margin-top : 12px;
+    height : 35px;
+    width : 272px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #31174e;
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #d39dd2;
+    color : #350735;
+}
+
+#output-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  width : 300px;
+}
+.hidden{
+    display: none;
+}
+
+.copy-box {
+  margin: 30px auto;
+  width: 80%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.copy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.copy-header h3 {
+  margin: 0;
+}
+
+#result {
+  width: 100%;
+  min-height: 200px;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  line-height: 1.6;
+  background: #1e1e2f;
+  color: cornsilk;
+}
+
+#copy-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  background: #00c2ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#copy-btn:hover {
+  background: #00a2d8;
+}
